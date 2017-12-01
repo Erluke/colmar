@@ -11,7 +11,7 @@ div.site-container {
   max-width: 1200px;
   margin: 0 auto;
 }
-/* Mobile Header is hidden on large display*/
+/* Mobile Header is not displayed on large screens*/
 #mobile-header {
   display: none;
   justify-content: space-between;
@@ -22,4 +22,36 @@ div.site-container {
   #mobile-header {
     display: flex;
   }
+}
+
+#desktop-header {
+position: fixed;
+
+}
+#lion {
+  padding-top: 1rem;
+  padding-left: 1.5rem;
+  float: left;
+}
+#title {
+  float: left;
+  padding-left: .5rem;
+  padding-top: 1.5rem;
+}
+#colmar {
+  font-weight: bold;
+}
+#academy {
+  color: #808080
+}
+#navigation {
+  padding-top: 1.5rem;
+  float: right;
+}
+nav {
+  padding-right: 0.5rem;
+
+}
+nav a {
+  padding-right: 1rem;
 }
