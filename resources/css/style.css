@@ -23,7 +23,7 @@ div.site-container {
     display: flex;
   }
 }
-
+/* Desktop Header is fixed and display changes on smaller screens*/
 #desktop-header {
 position: fixed;
 
@@ -44,6 +44,7 @@ position: fixed;
 #academy {
   color: #808080
 }
+/*Padding between navigation anchors will shrink for tablets and anchors will have color changes in different states*/
 #navigation {
   padding-top: 1.5rem;
   float: right;
@@ -54,4 +55,5 @@ nav {
 }
 nav a {
   padding-right: 1rem;
+  transition: color 0.5s linear 0.15s;
 }
