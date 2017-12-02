@@ -8,6 +8,14 @@
 }
 /* latin */
 @font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Raleway Bold'), local('Raleway-Bold'), url(https://fonts.gstatic.com/s/raleway/v12/JbtMzqLaYbbbCL9X6EvaI_k_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* latin */
+@font-face {
   font-family: 'Vollkorn SC';
   font-style: normal;
   font-weight: 400;
@@ -61,11 +69,11 @@ div.site-container {
   padding-top: 1.5rem;
 }
 #colmar {
-  font-family: Vollkorn SC;
+  font-family: Vollkorn SC, sans-serif;
   font-weight: 700;
 }
 #academy {
-  font-family: Vollkorn SC;
+  font-family: Vollkorn SC, sans-serif;
   color: #808080
 }
 /*Padding between navigation anchors will shrink for tablets and anchors will have color changes in different states*/
@@ -94,5 +102,67 @@ nav a:visited {
 @media screen and (max-width: 600px) {
   #desktop-header {
     display: none;
+  }
+}
+/* Section 1 -- Banner Section--*/
+#section-1  {
+  }
+  .section-container {
+    display: flex;
+  }
+#s1-image {
+  width: 60%;
+  margin: 1.5rem 2rem;
+}
+#s1-image img{
+  width: 100%;
+}
+#s1-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 3rem;
+  width: 40%;
+}
+#s1-text h1 {
+  font-size: 2.5rem;
+  font-family: Vollkorn SC, sans-serif;
+  font-weight: 700;
+  text-shadow: 2px 2px #808080;
+}
+#s1-text p {
+
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-right: 3rem;
+  margin-top: 1rem;
+}
+#s1-text a {
+  color: white;
+  text-align: center;
+  width: 100%;
+  background-color: gray;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  margin-top: 1rem;
+  transition: all 0.25s ease-out;
+}
+#s1-text a:hover {
+  color: #EF5007;
+  background-color: #013A84;
+}
+/*Banner Section changes for small screens*/
+@media screen and (max-width: 760px) {
+  .section-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  #s1-image  {
+    width: 100%;
+  }
+  #s1-text {
+    width: 100%;
+    margin-left: 3rem;
   }
 }
