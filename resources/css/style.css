@@ -106,8 +106,9 @@ nav a:visited {
 }
 /* Section 1 -- Banner Section--*/
 #section-1  {
+  background-color: #FFE8DD;
   }
-  .section-container {
+  .section-1-container {
     display: flex;
   }
 #s1-image {
@@ -154,7 +155,7 @@ nav a:visited {
 }
 /*Banner Section changes for small screens*/
 @media screen and (max-width: 760px) {
-  .section-container {
+  .section-1-container {
     flex-direction: column;
     align-items: center;
   }
@@ -165,4 +166,80 @@ nav a:visited {
     width: 100%;
     margin-left: 3rem;
   }
+}
+/* Section 2 is information section with left and right divisions. Left division does not display on small screens*/
+.section-2-container {
+  display: flex;
+  margin: 2rem 1.5rem;
+}
+/* Section 2 Left */
+#section-2-left {
+  width: 60%;
+  margin-right: 1.5rem;
+  margin-left: 0.5rem;
+}
+#section-2-left img {
+  width: 95%;
+  margin-right: 1.5rem;
+}
+#section-2-left h2 {
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-family: Vollkorn SC, sans-serif;
+  font-weight: 700;
+}
+#section-2-left p {
+  width: 95%;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  font-family: Raleway, sans-serif;
+}
+#section-2-left span{
+  font-family: Vollkorn SC, sans-serif;
+}
+#section-2-left a {
+  color: #013A84;
+}
+
+@media screen and (max-width: 760px) {
+  #section-2-left {
+    display: none;
+  }
+}
+/* Section 2 Right */
+#section-2-right {
+  width: 40%;
+}
+.information-container {
+display: flex;
+margin: 1rem;
+height: 30%;
+}
+.info-image {
+  width: 35%;
+}
+.info-image img {
+
+  width:100%;
+  height: auto;
+  margin-top: 1rem;
+}
+.s2-right-column {
+
+  padding: 1rem;
+  width: 65%
+}
+.s2-right-column h3 {
+  margin-bottom: .5rem;
+  font-family: Vollkorn SC, sans-serif;
+  font-size: 1.5rem;
+}
+.s2-right-column span {
+ font-family: Raleway, sans-serif;
+ display: block;
+}
+.s2-right-column a {
+  color: #013A84;
+  display: block;
+  margin-top: .5rem;
 }
