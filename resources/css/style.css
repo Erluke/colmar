@@ -280,3 +280,67 @@ height: 30%;
     margin: 0 auto;
   }
 }
+
+/* Section 3 mobile display with active buttons */
+#section-3-header h2 {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  font-size: 2rem;
+  text-align: center;
+  font-family: Vollkorn SC, sans-serif;
+  font-weight: 700;
+}
+#course-list-mobile {
+
+}
+.software-engineering {
+  position:relative;
+  right: 100%;
+  width: 200%;
+  display:flex;
+
+
+}
+.software-engineering:active  {
+  right: 0%;
+  left: 0%;
+}
+#s-e-left {
+  text-align: center;
+  background-color: #013A84;
+  width: 50%;
+  z-index: 1;
+}
+#s-e-left img {
+  margin-top: 1rem;
+  width: 50%;
+}
+#s-e-left h3 {
+  color: #808080;
+  font-size: 1.5rem;
+  font-family: Vollkorn SC, sans-serif;
+  margin-bottom: 0.5rem;
+}
+#s-e-left h4 {
+  margin-bottom: 0.5rem;
+}
+#s-e-right {
+  background-color: #013A84;
+  width: 50%;
+}
+#s-e-right h3 {
+  color: #808080;
+  font-size: 1.5rem;
+  font-family: Vollkorn SC, sans-serif;
+  padding-top: 1rem;
+  text-align: center;
+  padding-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid black;
+}
+@media screen and (max-width: 600px) {
+  #s-e-right h3 {
+    padding-left: 1.5rem;
+    text-align: left;
+  }
+}
