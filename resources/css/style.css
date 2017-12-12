@@ -608,6 +608,11 @@ height: 30%;
 #section-3-container {
   margin: 2rem 4.5rem;
 }
+@media screen and (max-width: 760px) {
+  #section-3-container {
+    display: none;
+  }
+}
 .s3-row {
 
   display: flex;
@@ -631,4 +636,67 @@ height: 30%;
 }
 .course-container p {
 
+}
+/* Section-4 Mobile does not display on large Screens*/
+#s-4-mobile {
+  position: relative;
+  bottom: 1200px;
+  background-color: white;
+  text-align: center;
+  display: none;
+}
+@media screen and (max-width: 760px) {
+  #s-4-mobile {
+    display: block;
+  }
+}
+@media screen and (max-width: 700px) {
+  #s-4-mobile {
+    bottom: 1070px;
+  }
+}
+@media screen and (max-width: 610px) {
+  #s-4-mobile {
+      bottom: 970px;
+    }
+  }
+@media screen and (max-width: 532px) {
+    #s-4-mobile {
+      bottom: 840px;
+    }
+}
+@media screen and (max-width: 450px) {
+    #s-4-mobile {
+      bottom: 735px;
+    }
+}
+@media screen and (max-width: 375px) {
+    #s-4-mobile {
+      bottom: 675px;
+    }
+}
+@media screen and (max-width: 316px) {
+    #s-4-mobile {
+      bottom: 600px;
+    }
+}
+#s-4-m-header h2{
+  font-family: Vollkorn SC, sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+#section-4-header h2{
+  text-align: center;
+  font-family: Vollkorn SC, sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+@media screen and (max-width: 760px) {
+  #section-4-header {
+    display: none;
+  }
 }
